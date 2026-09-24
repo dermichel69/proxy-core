@@ -1,0 +1,51 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets / local config
+.env
+.env.*
+*.pem
+*.key
+*.crt
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+*.orig
+*.pid
+*.sock
+
+# Generated runtime data
+warp-data/
+warp-data-2/
+logs/
+tmp/
+cache/
+
+# Browser / local runtime artifacts
+chrome-profile/
+Chromium/
+Google/Chrome/
+
+# Generic local working files
+*.local
+*.local.*
