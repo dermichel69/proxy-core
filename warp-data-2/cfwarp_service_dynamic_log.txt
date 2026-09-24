@@ -1,0 +1,3 @@
+2026-09-15T11:42:00.278Z ERROR sentry-message: Shutting down MASQUE connection after stats timeout
+2026-09-15T11:47:31.320Z ERROR sentry-message: Shutting down MASQUE connection after stats timeout
+2026-09-15T11:55:15.817Z ERROR sentry-message: Shutting down MASQUE connection after stats timeout

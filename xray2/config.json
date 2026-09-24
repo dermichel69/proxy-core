@@ -1,0 +1,42 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "port": 2090,
+      "listen": "0.0.0.0",
+      "protocol": "socks",
+      "settings": {
+        "auth": "password",
+        "accounts": [
+          {
+            "user": "streamnet",
+            "pass": "secret123"
+          }
+        ],
+        "udp": true
+      }
+    },
+    {
+      "port": 2091,
+      "listen": "0.0.0.0",
+      "protocol": "http",
+      "settings": {
+        "accounts": [
+          {
+            "user": "streamnet",
+            "pass": "secret123"
+          }
+        ],
+        "allowTransparent": false
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "tag": "direct"
+    }
+  ]
+}

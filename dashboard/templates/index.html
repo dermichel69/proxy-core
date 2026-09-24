@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="de" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <title>StreamNet Proxy Core Monitor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { 
+      background-color: #121417; 
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+    }
+    .card { 
+      background: #1a1d24; 
+      border: 1px solid #2a2f3a; 
+      transition: all 0.2s ease-in-out;
+    }
+    .card:hover { 
+      border-color: #10b981; 
+      box-shadow: 0 4px 20px -2px rgba(16, 185, 129, 0.12);
+    }
+    .pulse-green { 
+      box-shadow: 0 0 10px rgba(16, 185, 129, 0.7); 
+      animation: pulseSlow 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    .pulse-red { 
+      box-shadow: 0 0 10px rgba(239, 68, 68, 0.6); 
+      animation: pulseSlow 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulseSlow {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.92); }
+    }
+  </style>
+</head>
+<body class="text-gray-200 min-h-screen p-6 selection:bg-emerald-500 selection:text-white">
+
+  <!-- Header -->
+  <header class="flex flex-col md:flex-row justify-between items-center mb-8 pb-4 border-b border-[#2a2f3a] gap-4">
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shadow-lg shadow-emerald-950/40">
+        <i class="fa-solid fa-bolt text-xl text-white"></i>
+      </div>
+      <div>
+        <h1 class="text-2xl font-bold text-white tracking-wider flex items-center gap-3">
+          StreamNet Edge Core
+          <span class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-950/80 text-emerald-400 border border-emerald-800/80 font-mono font-bold">Auto-Heal Active</span>
+        </h1>
+        <p class="text-xs text-gray-400 mt-0.5">Live DASH Stream Monitor & Multi-Hop VPN Infrastructure · 50.7.37.202</p>
+      </div>
+    </div>
+    
+    <div class="flex items-center gap-3">
+      <div class="px-3.5 py-1.5 rounded-xl bg-[#1a1d24] border border-[#2a2f3a] flex items-center gap-2.5">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 pulse-green"></span>
+        <span class="text-xs font-mono text-gray-300">Live CDN Check</span>
+      </div>
+      <button onclick="refreshData()" class="px-4 py-2 bg-[#222731] hover:bg-[#2a2f3a] text-xs font-semibold text-gray-200 hover:text-white rounded-xl border border-[#343b49] hover:border-emerald-500/50 transition flex items-center gap-2 cursor-pointer">
+        <i class="fa-solid fa-arrows-rotate text-emerald-400"></i> Refresh
+      </button>
+      <a href="/logout" class="px-3.5 py-2 bg-[#222731] hover:bg-rose-900/50 text-xs font-semibold text-gray-300 hover:text-rose-300 rounded-xl border border-[#343b49] hover:border-rose-700/50 transition flex items-center gap-1.5">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+      </a>
+    </div>
+  </header>
+
+  <!-- Pipelines: 3x2 Grid -->
+  <div class="mb-10">
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-sm font-bold uppercase tracking-wider text-gray-400 flex items-center gap-2">
+        <i class="fa-solid fa-diagram-project text-emerald-500"></i> Multi-Hop Routing Pipelines (6 Stacks)
+      </h2>
+      <span class="text-xs text-gray-500 font-mono">End-to-End Tunnel & CDN Health</span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="proxies-grid">
+      <!-- Wird durch JS befüllt oder als Skeleton gerendert -->
+    </div>
+  </div>
+
+  <!-- Autorisierte Streaming-Nodes -->
+  <div>
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-sm font-bold uppercase tracking-wider text-gray-400 flex items-center gap-2">
+        <i class="fa-solid fa-server text-emerald-500"></i> Autorisierte Streaming-Server (Ingestion Nodes)
+      </h2>
+      <span class="text-xs text-gray-500 font-mono">5 Server autorisiert · Live Latenz-Ampel</span>
+    </div>
+
+    <div id="streamers-grid" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4"></div>
+  </div>
+
+  <script>
+    const PROXY_ORDER = [
+      { id: "de", port: 2080, http: 2081, has_conf: true },
+      { id: "de2", port: 2090, http: 2091, has_conf: false },
+      { id: "de3", port: 2092, http: 2093, has_conf: false },
+      { id: "de4", port: 2094, http: 2095, has_conf: false },
+      { id: "de5", port: 2096, http: 2097, has_conf: false },
+      { id: "de6", port: 2098, http: 2099, has_conf: false }
+    ];
+
+    class SmoothGraph {
+      constructor(canvasId) {
+        this.canvas = document.getElementById(canvasId);
+        if (!this.canvas) return;
+        this.ctx = this.canvas.getContext('2d');
+        this.pts = 90;
+        this.rx = Array(this.pts).fill(0);
+        this.tx = Array(this.pts).fill(0);
+        this.curRx = 0;
+        this.curTx = 0;
+        this.targetRx = 0;
+        this.targetTx = 0;
+        this.lastShift = performance.now();
+        this.shiftInterval = 200;
+      }
+
+      setTarget(r, t) {
+        this.targetRx = r;
+        this.targetTx = t;
+      }
+
+      render(now) {
+        if (!this.canvas || !this.ctx) return;
+        const rect = this.canvas.getBoundingClientRect();
+        if (rect.width === 0 || rect.height === 0) return;
+
+        if (this.canvas.width !== rect.width || this.canvas.height !== rect.height) {
+          this.canvas.width = rect.width;
+          this.canvas.height = rect.height;
+        }
+
+        const ctx = this.ctx;
+        const w = this.canvas.width;
+        const h = this.canvas.height;
+
+        this.curRx += (this.targetRx - this.curRx) * 0.05;
+        this.curTx += (this.targetTx - this.curTx) * 0.05;
+
+        if (now - this.lastShift >= this.shiftInterval) {
+          this.rx.push(this.curRx); this.rx.shift();
+          this.tx.push(this.curTx); this.tx.shift();
+          this.lastShift = now;
+        }
+
+        ctx.clearRect(0, 0, w, h);
+        const maxVal = Math.max(1.5, ...this.rx, ...this.tx);
+
+        const drawPath = (data, stroke, fill) => {
+          ctx.beginPath();
+          const step = w / (this.pts - 1);
+          for (let i = 0; i < this.pts; i++) {
+            const x = i * step;
+            const y = h - (data[i] / maxVal) * (h - 6) - 3;
+            if (i === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+          }
+          ctx.strokeStyle = stroke;
+          ctx.lineWidth = 1.5;
+          ctx.stroke();
+
+          ctx.lineTo(w, h);
+          ctx.lineTo(0, h);
+          ctx.closePath();
+          ctx.fillStyle = fill;
+          ctx.fill();
+        };
+
+        drawPath(this.tx, '#06b6d4', 'rgba(6, 182, 212, 0.08)');
+        drawPath(this.rx, '#10b981', 'rgba(16, 185, 129, 0.15)');
+      }
+    }
+
+    const graphs = {};
+
+    function initProxyCards() {
+      const container = document.getElementById('proxies-grid');
+      container.innerHTML = PROXY_ORDER.map(cfg => {
+        const id = cfg.id;
+        return `
+          <div class="card p-5 rounded-2xl relative overflow-hidden" id="card-proxy-${id}">
+            <div class="flex justify-between items-start mb-3">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 pulse-green" id="dot-${id}"></span>
+                  <h3 class="text-base font-bold text-white tracking-wide" id="title-${id}">Proxy (${id.toUpperCase()})</h3>
+                </div>
+                <div class="text-[11px] font-mono text-gray-400 mt-0.5" id="chain-${id}">Standort lädt...</div>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold border" id="cdn-badge-${id}">CDN: ...</span>
+                <span class="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold border text-emerald-400 bg-emerald-950/60 border-emerald-700/60" id="badge-${id}">ONLINE</span>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <span class="text-[9px] font-bold uppercase tracking-wider text-gray-500 block mb-1">Streamer Proxy-URL (SOCKS5):</span>
+              <div class="flex items-center bg-[#121417] p-1.5 rounded-xl border border-[#2a2f3a] gap-1.5">
+                <input id="input-${id}" type="text" readonly value="socks5h://streamnet:secret123@50.7.37.202:${cfg.port}" 
+                       class="w-full bg-transparent font-mono text-xs text-emerald-400 font-semibold px-1 py-0.5 outline-none select-all cursor-pointer">
+                <button onclick="copyToClipboard('input-${id}', this)" type="button" class="px-2.5 py-1 bg-[#222731] hover:bg-emerald-600 text-gray-200 hover:text-white text-[10px] font-bold rounded-lg border border-[#343b49] hover:border-emerald-500 transition flex-shrink-0 cursor-pointer">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Health & Port Bar -->
+            <div class="grid grid-cols-3 gap-2 bg-[#121417]/70 p-2.5 rounded-xl border border-[#2a2f3a] mb-3 text-center">
+              <div>
+                <span class="text-[8px] font-bold uppercase tracking-wider text-gray-500 block">Ports</span>
+                <div class="font-mono text-[10px] font-semibold text-gray-200">${cfg.port}/${cfg.http}</div>
+              </div>
+              <div>
+                <span class="text-[8px] font-bold uppercase tracking-wider text-gray-500 block">CDN Latenz</span>
+                <div class="font-mono text-[10px] font-semibold text-emerald-400" id="latency-${id}">--</div>
+              </div>
+              <div>
+                <span class="text-[8px] font-bold uppercase tracking-wider text-gray-500 block">Sessions</span>
+                <div class="font-mono text-[10px] font-semibold text-cyan-400" id="sessions-${id}">0 aktiv</div>
+              </div>
+            </div>
+
+            <div class="bg-[#121417]/70 p-2.5 rounded-xl border border-[#2a2f3a] mb-3 flex items-center justify-between gap-2">
+              <span class="text-[9px] font-bold uppercase tracking-wider text-gray-500">Exit-IP</span>
+              <div class="font-mono text-[11px] font-semibold text-emerald-400 flex items-center justify-end gap-1.5">
+                <span id="exit-ip-${id}">...</span>
+                <span class="px-1.5 py-0.5 rounded bg-[#222731] text-[10px] text-gray-300 border border-[#343b49] font-sans font-bold" id="loc-${id}">DE</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2 border-t border-[#2a2f3a] pt-3 mb-3 text-center">
+              <div class="bg-[#121417]/80 p-2.5 rounded-lg border border-[#2a2f3a]">
+                <span class="text-[10px] uppercase font-bold text-gray-500 flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-arrow-down text-[9px] text-emerald-400"></i> In
+                </span>
+                <span class="text-xs font-mono font-bold text-emerald-400 block mt-0.5" id="rx-rate-${id}">0.00 MB/s</span>
+                <span class="text-[10px] font-mono text-gray-400 block" id="rx-total-${id}">Gesamt: 0 B</span>
+              </div>
+              <div class="bg-[#121417]/80 p-2.5 rounded-lg border border-[#2a2f3a]">
+                <span class="text-[10px] uppercase font-bold text-gray-500 flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-arrow-up text-[9px] text-cyan-400"></i> Out
+                </span>
+                <span class="text-xs font-mono font-bold text-cyan-400 block mt-0.5" id="tx-rate-${id}">0.00 MB/s</span>
+                <span class="text-[10px] font-mono text-gray-400 block" id="tx-total-${id}">Gesamt: 0 B</span>
+              </div>
+            </div>
+
+            <div class="bg-[#121417]/90 p-2.5 rounded-xl border border-[#2a2f3a] mb-4">
+              <div class="flex items-center justify-between mb-1 px-1">
+                <span class="text-[9px] font-bold uppercase tracking-wider text-gray-500">Live Durchsatz</span>
+              </div>
+              <div class="h-20 w-full relative">
+                <canvas id="canvas-${id}" class="w-full h-full block"></canvas>
+              </div>
+            </div>
+
+            <div class="grid ${cfg.has_conf ? 'grid-cols-2' : 'grid-cols-1'} gap-2">
+              <button type="button" onclick="triggerAction('restart', '${id}')" class="py-2 bg-[#222731] hover:bg-[#2a2f3a] text-gray-200 text-[11px] font-bold rounded-xl border border-[#343b49] hover:border-emerald-500/50 transition flex items-center justify-center gap-1 cursor-pointer">
+                <i class="fa-solid fa-rotate-right text-emerald-400"></i> Restart
+              </button>
+              ${cfg.has_conf ? `
+                <label class="py-2 bg-[#222731] hover:bg-emerald-600 text-gray-200 text-[11px] font-bold rounded-xl border border-[#343b49] hover:border-emerald-500 transition flex items-center justify-center gap-1 cursor-pointer">
+                  <i class="fa-solid fa-cloud-arrow-up"></i> WG-Config
+                  <input type="file" accept=".conf" class="hidden" onchange="uploadWgConfig(this, '${id}')">
+                </label>
+              ` : ''}
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      PROXY_ORDER.forEach(cfg => {
+        graphs[cfg.id] = new SmoothGraph(`canvas-${cfg.id}`);
+      });
+    }
+
+    function copyToClipboard(inputId, btn) {
+      const input = document.getElementById(inputId);
+      if (!input) return;
+      input.focus();
+      input.select();
+      if (navigator.clipboard) navigator.clipboard.writeText(input.value);
+      const orig = btn.innerHTML;
+      btn.innerHTML = '<i class="fa-solid fa-check text-emerald-400"></i>';
+      setTimeout(() => { btn.innerHTML = orig; }, 1500);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      initProxyCards();
+
+      function anim(now) {
+        for (let k in graphs) {
+          if (graphs[k]) graphs[k].render(now);
+        }
+        requestAnimationFrame(anim);
+      }
+      requestAnimationFrame(anim);
+    });
+
+    async function refreshData() {
+      try {
+        const res = await fetch('/api/status');
+        if (res.status === 401) {
+          window.location.href = '/login';
+          return;
+        }
+        if (!res.ok) return;
+        const data = await res.json();
+
+        if (data.proxies) {
+          data.proxies.forEach(p => {
+            const id = p.id;
+            const isOnline = (p.status === 'running');
+
+            const titleEl = document.getElementById(`title-${id}`);
+            if (titleEl && p.name) titleEl.textContent = p.name;
+
+            const badge = document.getElementById(`badge-${id}`);
+            if (badge) {
+              badge.textContent = isOnline ? 'ONLINE' : 'STOPPED';
+              badge.className = isOnline 
+                ? 'px-2 py-0.5 rounded-full text-[10px] font-mono font-bold border text-emerald-400 bg-emerald-950/60 border-emerald-700/60'
+                : 'px-2 py-0.5 rounded-full text-[10px] font-mono font-bold border text-rose-400 bg-rose-950/60 border-rose-800/60';
+            }
+
+            const dot = document.getElementById(`dot-${id}`);
+            if (dot) {
+              dot.className = isOnline 
+                ? 'w-2.5 h-2.5 rounded-full bg-emerald-500 pulse-green' 
+                : 'w-2.5 h-2.5 rounded-full bg-rose-500 pulse-red';
+            }
+
+            // CDN Health Badge
+            const cdnBadge = document.getElementById(`cdn-badge-${id}`);
+            if (cdnBadge) {
+              const cdn = p.cdn_status || 'checking';
+              if (cdn === 'OK') {
+                cdnBadge.textContent = 'CDN 200 OK';
+                cdnBadge.className = 'px-2 py-0.5 rounded-full text-[10px] font-mono font-bold border text-emerald-400 bg-emerald-950/60 border-emerald-700/60';
+              } else if (cdn === 'BLOCKED') {
+                cdnBadge.textContent = 'CDN BLOCKED (403)';
+                cdnBadge.className = 'px-2 py-0.5 rounded-full text-[10px] font-mono font-bold border text-rose-400 bg-rose-950/60 border-rose-800/60 animate-pulse';
+              } else {
+                cdnBadge.textContent = `CDN: ${cdn}`;
+                cdnBadge.className = 'px-2 py-0.5 rounded-full text-[10px] font-mono font-bold border text-amber-400 bg-amber-950/60 border-amber-700/60';
+              }
+            }
+
+            // CDN Latenz & Sessions
+            const latEl = document.getElementById(`latency-${id}`);
+            if (latEl) latEl.textContent = p.tunnel_latency || '--';
+
+            const sessEl = document.getElementById(`sessions-${id}`);
+            if (sessEl) sessEl.textContent = `${p.sessions} aktiv`;
+
+            // Standort
+            const chainEl = document.getElementById(`chain-${id}`);
+            if (chainEl && p.chain) chainEl.textContent = p.chain;
+
+            const locEl = document.getElementById(`loc-${id}`);
+            if (locEl && p.exit_loc) locEl.textContent = p.exit_loc;
+
+            const exitEl = document.getElementById(`exit-ip-${id}`);
+            if (exitEl && p.exit_ip) exitEl.textContent = p.exit_ip;
+
+            // Traffic
+            const rxRateEl = document.getElementById(`rx-rate-${id}`);
+            if (rxRateEl) rxRateEl.textContent = p.rx_rate || '0.00 MB/s';
+
+            const txRateEl = document.getElementById(`tx-rate-${id}`);
+            if (txRateEl) txRateEl.textContent = p.tx_rate || '0.00 MB/s';
+
+            const rxTotalEl = document.getElementById(`rx-total-${id}`);
+            if (rxTotalEl && p.total_rx) rxTotalEl.textContent = `Gesamt: ${p.total_rx}`;
+
+            const txTotalEl = document.getElementById(`tx-total-${id}`);
+            if (txTotalEl && p.total_tx) txTotalEl.textContent = `Gesamt: ${p.total_tx}`;
+
+            if (graphs[id]) {
+              graphs[id].setTarget(p.rx_val || 0.0, p.tx_val || 0.0);
+            }
+          });
+        }
+
+        const streamersContainer = document.getElementById('streamers-grid');
+        if (streamersContainer && data.streamers) {
+          streamersContainer.innerHTML = data.streamers.map(s => {
+            const isOnline = s.status === 'online';
+            const badgeClass = isOnline ? 'bg-emerald-950/60 text-emerald-400 border-emerald-800/60' : 'bg-rose-950/60 text-rose-400 border-rose-800/60';
+            const dotClass = isOnline ? 'bg-emerald-500 pulse-green' : 'bg-rose-500 pulse-red';
+
+            return `
+              <div class="card p-4 rounded-xl relative overflow-hidden">
+                <div class="flex justify-between items-start mb-2">
+                  <span class="text-xs font-bold text-gray-400 uppercase tracking-wider truncate">${s.name}</span>
+                  <span class="w-2.5 h-2.5 rounded-full ${dotClass} flex-shrink-0"></span>
+                </div>
+                <div class="text-sm font-mono font-bold text-white tracking-wide mb-3">${s.ip}</div>
+                <div class="flex justify-between items-center text-xs border-t border-[#2a2f3a] pt-3">
+                  <span class="text-gray-500 text-[11px]">Proxy: <strong class="text-gray-300">${s.target_proxy}</strong></span>
+                  <span class="px-2 py-0.5 rounded border text-[11px] font-mono font-bold ${badgeClass}">${s.latency}</span>
+                </div>
+              </div>
+            `;
+          }).join('');
+        }
+      } catch (err) {
+        console.error("Status Sync Error:", err);
+      }
+    }
+
+    async function triggerAction(action, target) {
+      if(!confirm(`Pipeline ${target.toUpperCase()} wirklich ${action === 'restart' ? 'neu starten' : action}?`)) return;
+      await fetch(`/api/action/${action}/${target}`, { method: 'POST' });
+      setTimeout(refreshData, 1200);
+    }
+
+    refreshData();
+    setInterval(refreshData, 1000);
+  </script>
+</body>
+</html>

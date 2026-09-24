@@ -1,0 +1,460 @@
+2026-09-16T07:13:24.148Z  INFO snapshots-collection: Started snapshot capture id=20260916-071324-tNZA in_flight=1
+2026-09-16T07:13:24.148Z DEBUG Capturing snapshots{id=20260916-071324-tNZA}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-071324-tNZA") name="Happy Eyeballs Failure"
+2026-09-16T07:13:24.148Z DEBUG Capturing snapshots{id=20260916-071324-tNZA}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:13:24.149Z DEBUG Capturing snapshots{id=20260916-071324-tNZA}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:13:30.736Z DEBUG Capturing snapshots{id=20260916-071324-tNZA}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:13:30.736Z DEBUG Capturing snapshots{id=20260916-071324-tNZA}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:13:30.737Z  INFO snapshots-collection: Snapshot completed id=20260916-071324-tNZA path=/var/lib/cloudflare-warp/snapshots/20260916-071324-tNZA.log
+2026-09-16T07:13:51.589Z  INFO snapshots-collection: Started snapshot capture id=20260916-071351-WrFp in_flight=1
+2026-09-16T07:13:51.589Z DEBUG Capturing snapshots{id=20260916-071351-WrFp}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-071351-WrFp") name="Happy Eyeballs Failure"
+2026-09-16T07:13:51.589Z DEBUG Capturing snapshots{id=20260916-071351-WrFp}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:13:51.590Z DEBUG Capturing snapshots{id=20260916-071351-WrFp}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:13:58.417Z DEBUG Capturing snapshots{id=20260916-071351-WrFp}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:13:58.418Z DEBUG Capturing snapshots{id=20260916-071351-WrFp}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:13:58.418Z  INFO snapshots-collection: Snapshot completed id=20260916-071351-WrFp path=/var/lib/cloudflare-warp/snapshots/20260916-071351-WrFp.log
+2026-09-16T07:16:24.044Z  INFO snapshots-collection: Started snapshot capture id=20260916-071624-R37d in_flight=1
+2026-09-16T07:16:24.044Z DEBUG Capturing snapshots{id=20260916-071624-R37d}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-071624-R37d") name="Happy Eyeballs Failure"
+2026-09-16T07:16:24.044Z DEBUG Capturing snapshots{id=20260916-071624-R37d}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:16:24.045Z DEBUG Capturing snapshots{id=20260916-071624-R37d}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:16:30.699Z DEBUG Capturing snapshots{id=20260916-071624-R37d}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:16:30.700Z DEBUG Capturing snapshots{id=20260916-071624-R37d}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:16:30.700Z  INFO snapshots-collection: Snapshot completed id=20260916-071624-R37d path=/var/lib/cloudflare-warp/snapshots/20260916-071624-R37d.log
+2026-09-16T07:19:24.521Z  INFO snapshots-collection: Started snapshot capture id=20260916-071924-tt43 in_flight=1
+2026-09-16T07:19:24.521Z DEBUG Capturing snapshots{id=20260916-071924-tt43}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-071924-tt43") name="Happy Eyeballs Failure"
+2026-09-16T07:19:24.521Z DEBUG Capturing snapshots{id=20260916-071924-tt43}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:19:24.522Z DEBUG Capturing snapshots{id=20260916-071924-tt43}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:19:42.372Z DEBUG Capturing snapshots{id=20260916-071924-tt43}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:19:42.372Z DEBUG Capturing snapshots{id=20260916-071924-tt43}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:19:42.373Z  INFO snapshots-collection: Snapshot completed id=20260916-071924-tt43 path=/var/lib/cloudflare-warp/snapshots/20260916-071924-tt43.log
+2026-09-16T07:20:12.174Z  INFO snapshots-collection: Started snapshot capture id=20260916-072012-X4jn in_flight=1
+2026-09-16T07:20:12.175Z DEBUG Capturing snapshots{id=20260916-072012-X4jn}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-072012-X4jn") name="Happy Eyeballs Failure"
+2026-09-16T07:20:12.175Z DEBUG Capturing snapshots{id=20260916-072012-X4jn}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:20:12.175Z DEBUG Capturing snapshots{id=20260916-072012-X4jn}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:20:17.723Z DEBUG Capturing snapshots{id=20260916-072012-X4jn}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:20:17.723Z DEBUG Capturing snapshots{id=20260916-072012-X4jn}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:20:17.723Z  INFO snapshots-collection: Snapshot completed id=20260916-072012-X4jn path=/var/lib/cloudflare-warp/snapshots/20260916-072012-X4jn.log
+2026-09-16T07:21:10.630Z  INFO snapshots-collection: Started snapshot capture id=20260916-072110-NbGb in_flight=1
+2026-09-16T07:21:10.630Z DEBUG Capturing snapshots{id=20260916-072110-NbGb}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-072110-NbGb") name="Happy Eyeballs Failure"
+2026-09-16T07:21:10.630Z DEBUG Capturing snapshots{id=20260916-072110-NbGb}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:21:10.631Z DEBUG Capturing snapshots{id=20260916-072110-NbGb}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:21:17.159Z DEBUG Capturing snapshots{id=20260916-072110-NbGb}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:21:17.160Z DEBUG Capturing snapshots{id=20260916-072110-NbGb}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:21:17.160Z  INFO snapshots-collection: Snapshot completed id=20260916-072110-NbGb path=/var/lib/cloudflare-warp/snapshots/20260916-072110-NbGb.log
+2026-09-16T07:21:41.080Z  INFO snapshots-collection: Started snapshot capture id=20260916-072141-Fzer in_flight=1
+2026-09-16T07:21:41.080Z DEBUG Capturing snapshots{id=20260916-072141-Fzer}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-072141-Fzer") name="Happy Eyeballs Failure"
+2026-09-16T07:21:41.080Z DEBUG Capturing snapshots{id=20260916-072141-Fzer}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:21:41.081Z DEBUG Capturing snapshots{id=20260916-072141-Fzer}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:21:47.654Z DEBUG Capturing snapshots{id=20260916-072141-Fzer}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:21:47.655Z DEBUG Capturing snapshots{id=20260916-072141-Fzer}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:21:47.655Z  INFO snapshots-collection: Snapshot completed id=20260916-072141-Fzer path=/var/lib/cloudflare-warp/snapshots/20260916-072141-Fzer.log
+2026-09-16T07:22:08.529Z  INFO snapshots-collection: Started snapshot capture id=20260916-072208-aGPa in_flight=1
+2026-09-16T07:22:08.529Z DEBUG Capturing snapshots{id=20260916-072208-aGPa}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-072208-aGPa") name="Happy Eyeballs Failure"
+2026-09-16T07:22:08.530Z DEBUG Capturing snapshots{id=20260916-072208-aGPa}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:22:08.530Z DEBUG Capturing snapshots{id=20260916-072208-aGPa}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:22:15.146Z DEBUG Capturing snapshots{id=20260916-072208-aGPa}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:22:15.147Z DEBUG Capturing snapshots{id=20260916-072208-aGPa}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:22:15.147Z  INFO snapshots-collection: Snapshot completed id=20260916-072208-aGPa path=/var/lib/cloudflare-warp/snapshots/20260916-072208-aGPa.log
+2026-09-16T07:22:39.977Z  INFO snapshots-collection: Started snapshot capture id=20260916-072239-ds9F in_flight=1
+2026-09-16T07:22:39.977Z DEBUG Capturing snapshots{id=20260916-072239-ds9F}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-072239-ds9F") name="Happy Eyeballs Failure"
+2026-09-16T07:22:39.977Z DEBUG Capturing snapshots{id=20260916-072239-ds9F}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:22:39.978Z DEBUG Capturing snapshots{id=20260916-072239-ds9F}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:22:46.573Z DEBUG Capturing snapshots{id=20260916-072239-ds9F}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:22:46.573Z DEBUG Capturing snapshots{id=20260916-072239-ds9F}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:22:46.573Z  INFO snapshots-collection: Snapshot completed id=20260916-072239-ds9F path=/var/lib/cloudflare-warp/snapshots/20260916-072239-ds9F.log
+2026-09-16T07:24:05.440Z  INFO snapshots-collection: Started snapshot capture id=20260916-072405-htob in_flight=1
+2026-09-16T07:24:05.440Z DEBUG Capturing snapshots{id=20260916-072405-htob}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-072405-htob") name="Happy Eyeballs Failure"
+2026-09-16T07:24:05.440Z DEBUG Capturing snapshots{id=20260916-072405-htob}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:24:05.440Z DEBUG Capturing snapshots{id=20260916-072405-htob}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:24:10.979Z DEBUG Capturing snapshots{id=20260916-072405-htob}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:24:10.980Z DEBUG Capturing snapshots{id=20260916-072405-htob}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:24:10.980Z  INFO snapshots-collection: Snapshot completed id=20260916-072405-htob path=/var/lib/cloudflare-warp/snapshots/20260916-072405-htob.log
+2026-09-16T07:24:39.885Z  INFO snapshots-collection: Started snapshot capture id=20260916-072439-Ccvx in_flight=1
+2026-09-16T07:24:39.885Z DEBUG Capturing snapshots{id=20260916-072439-Ccvx}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-072439-Ccvx") name="Happy Eyeballs Failure"
+2026-09-16T07:24:39.885Z DEBUG Capturing snapshots{id=20260916-072439-Ccvx}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:24:39.886Z DEBUG Capturing snapshots{id=20260916-072439-Ccvx}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:24:55.159Z DEBUG Capturing snapshots{id=20260916-072439-Ccvx}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:24:55.160Z DEBUG Capturing snapshots{id=20260916-072439-Ccvx}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:24:55.160Z  INFO snapshots-collection: Snapshot completed id=20260916-072439-Ccvx path=/var/lib/cloudflare-warp/snapshots/20260916-072439-Ccvx.log
+2026-09-16T07:25:30.209Z  INFO snapshots-collection: Started snapshot capture id=20260916-072530-Qt7L in_flight=1
+2026-09-16T07:25:30.209Z DEBUG Capturing snapshots{id=20260916-072530-Qt7L}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-072530-Qt7L") name="Happy Eyeballs Failure"
+2026-09-16T07:25:30.209Z DEBUG Capturing snapshots{id=20260916-072530-Qt7L}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:25:30.210Z DEBUG Capturing snapshots{id=20260916-072530-Qt7L}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:25:37.771Z DEBUG Capturing snapshots{id=20260916-072530-Qt7L}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:25:37.771Z DEBUG Capturing snapshots{id=20260916-072530-Qt7L}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:25:37.771Z  INFO snapshots-collection: Snapshot completed id=20260916-072530-Qt7L path=/var/lib/cloudflare-warp/snapshots/20260916-072530-Qt7L.log
+2026-09-16T07:26:55.656Z  INFO snapshots-collection: Started snapshot capture id=20260916-072655-X8dr in_flight=1
+2026-09-16T07:26:55.656Z DEBUG Capturing snapshots{id=20260916-072655-X8dr}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-072655-X8dr") name="Happy Eyeballs Failure"
+2026-09-16T07:26:55.656Z DEBUG Capturing snapshots{id=20260916-072655-X8dr}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:26:55.657Z DEBUG Capturing snapshots{id=20260916-072655-X8dr}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:27:01.217Z DEBUG Capturing snapshots{id=20260916-072655-X8dr}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:27:01.218Z DEBUG Capturing snapshots{id=20260916-072655-X8dr}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:27:01.218Z  INFO snapshots-collection: Snapshot completed id=20260916-072655-X8dr path=/var/lib/cloudflare-warp/snapshots/20260916-072655-X8dr.log
+2026-09-16T07:28:20.104Z  INFO snapshots-collection: Started snapshot capture id=20260916-072820-AiCY in_flight=1
+2026-09-16T07:28:20.104Z DEBUG Capturing snapshots{id=20260916-072820-AiCY}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-072820-AiCY") name="Happy Eyeballs Failure"
+2026-09-16T07:28:20.104Z DEBUG Capturing snapshots{id=20260916-072820-AiCY}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:28:20.104Z DEBUG Capturing snapshots{id=20260916-072820-AiCY}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:28:27.693Z DEBUG Capturing snapshots{id=20260916-072820-AiCY}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:28:27.694Z DEBUG Capturing snapshots{id=20260916-072820-AiCY}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:28:27.694Z  INFO snapshots-collection: Snapshot completed id=20260916-072820-AiCY path=/var/lib/cloudflare-warp/snapshots/20260916-072820-AiCY.log
+2026-09-16T07:29:45.580Z  INFO snapshots-collection: Started snapshot capture id=20260916-072945-ojHv in_flight=1
+2026-09-16T07:29:45.580Z DEBUG Capturing snapshots{id=20260916-072945-ojHv}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-072945-ojHv") name="Happy Eyeballs Failure"
+2026-09-16T07:29:45.580Z DEBUG Capturing snapshots{id=20260916-072945-ojHv}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:29:45.581Z DEBUG Capturing snapshots{id=20260916-072945-ojHv}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:29:52.111Z DEBUG Capturing snapshots{id=20260916-072945-ojHv}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:29:52.111Z DEBUG Capturing snapshots{id=20260916-072945-ojHv}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:29:52.112Z  INFO snapshots-collection: Snapshot completed id=20260916-072945-ojHv path=/var/lib/cloudflare-warp/snapshots/20260916-072945-ojHv.log
+2026-09-16T07:32:35.609Z  INFO snapshots-collection: Started snapshot capture id=20260916-073235-mSBR in_flight=1
+2026-09-16T07:32:35.609Z DEBUG Capturing snapshots{id=20260916-073235-mSBR}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-073235-mSBR") name="Happy Eyeballs Failure"
+2026-09-16T07:32:35.610Z DEBUG Capturing snapshots{id=20260916-073235-mSBR}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:32:35.610Z DEBUG Capturing snapshots{id=20260916-073235-mSBR}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:32:41.274Z DEBUG Capturing snapshots{id=20260916-073235-mSBR}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:32:41.274Z DEBUG Capturing snapshots{id=20260916-073235-mSBR}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:32:41.274Z  INFO snapshots-collection: Snapshot completed id=20260916-073235-mSBR path=/var/lib/cloudflare-warp/snapshots/20260916-073235-mSBR.log
+2026-09-16T07:34:00.055Z  INFO snapshots-collection: Started snapshot capture id=20260916-073400-k7e8 in_flight=1
+2026-09-16T07:34:00.055Z DEBUG Capturing snapshots{id=20260916-073400-k7e8}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-073400-k7e8") name="Happy Eyeballs Failure"
+2026-09-16T07:34:00.055Z DEBUG Capturing snapshots{id=20260916-073400-k7e8}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:34:00.056Z DEBUG Capturing snapshots{id=20260916-073400-k7e8}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:34:06.538Z DEBUG Capturing snapshots{id=20260916-073400-k7e8}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:34:06.539Z DEBUG Capturing snapshots{id=20260916-073400-k7e8}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:34:06.539Z  INFO snapshots-collection: Snapshot completed id=20260916-073400-k7e8 path=/var/lib/cloudflare-warp/snapshots/20260916-073400-k7e8.log
+2026-09-16T07:34:50.511Z  INFO snapshots-collection: Started snapshot capture id=20260916-073450-Uslq in_flight=1
+2026-09-16T07:34:50.511Z DEBUG Capturing snapshots{id=20260916-073450-Uslq}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-073450-Uslq") name="Happy Eyeballs Failure"
+2026-09-16T07:34:50.511Z DEBUG Capturing snapshots{id=20260916-073450-Uslq}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:34:50.511Z DEBUG Capturing snapshots{id=20260916-073450-Uslq}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:34:57.097Z DEBUG Capturing snapshots{id=20260916-073450-Uslq}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:34:57.097Z DEBUG Capturing snapshots{id=20260916-073450-Uslq}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:34:57.098Z  INFO snapshots-collection: Snapshot completed id=20260916-073450-Uslq path=/var/lib/cloudflare-warp/snapshots/20260916-073450-Uslq.log
+2026-09-16T07:35:17.971Z  INFO snapshots-collection: Started snapshot capture id=20260916-073517-jTXI in_flight=1
+2026-09-16T07:35:17.971Z DEBUG Capturing snapshots{id=20260916-073517-jTXI}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-073517-jTXI") name="Happy Eyeballs Failure"
+2026-09-16T07:35:17.971Z DEBUG Capturing snapshots{id=20260916-073517-jTXI}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:35:17.972Z DEBUG Capturing snapshots{id=20260916-073517-jTXI}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:35:25.586Z DEBUG Capturing snapshots{id=20260916-073517-jTXI}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:35:25.587Z DEBUG Capturing snapshots{id=20260916-073517-jTXI}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:35:25.587Z  INFO snapshots-collection: Snapshot completed id=20260916-073517-jTXI path=/var/lib/cloudflare-warp/snapshots/20260916-073517-jTXI.log
+2026-09-16T07:35:48.417Z  INFO snapshots-collection: Started snapshot capture id=20260916-073548-1fWl in_flight=1
+2026-09-16T07:35:48.417Z DEBUG Capturing snapshots{id=20260916-073548-1fWl}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-073548-1fWl") name="Happy Eyeballs Failure"
+2026-09-16T07:35:48.417Z DEBUG Capturing snapshots{id=20260916-073548-1fWl}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:35:48.417Z DEBUG Capturing snapshots{id=20260916-073548-1fWl}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:35:54.953Z DEBUG Capturing snapshots{id=20260916-073548-1fWl}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:35:54.953Z DEBUG Capturing snapshots{id=20260916-073548-1fWl}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:35:54.954Z  INFO snapshots-collection: Snapshot completed id=20260916-073548-1fWl path=/var/lib/cloudflare-warp/snapshots/20260916-073548-1fWl.log
+2026-09-16T07:36:46.863Z  INFO snapshots-collection: Started snapshot capture id=20260916-073646-C4B6 in_flight=1
+2026-09-16T07:36:46.863Z DEBUG Capturing snapshots{id=20260916-073646-C4B6}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-073646-C4B6") name="Happy Eyeballs Failure"
+2026-09-16T07:36:46.863Z DEBUG Capturing snapshots{id=20260916-073646-C4B6}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:36:46.863Z DEBUG Capturing snapshots{id=20260916-073646-C4B6}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:36:53.422Z DEBUG Capturing snapshots{id=20260916-073646-C4B6}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:36:53.422Z DEBUG Capturing snapshots{id=20260916-073646-C4B6}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:36:53.423Z  INFO snapshots-collection: Snapshot completed id=20260916-073646-C4B6 path=/var/lib/cloudflare-warp/snapshots/20260916-073646-C4B6.log
+2026-09-16T07:37:45.312Z  INFO snapshots-collection: Started snapshot capture id=20260916-073745-ECEi in_flight=1
+2026-09-16T07:37:45.312Z DEBUG Capturing snapshots{id=20260916-073745-ECEi}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-073745-ECEi") name="Happy Eyeballs Failure"
+2026-09-16T07:37:45.312Z DEBUG Capturing snapshots{id=20260916-073745-ECEi}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:37:45.313Z DEBUG Capturing snapshots{id=20260916-073745-ECEi}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:37:50.822Z DEBUG Capturing snapshots{id=20260916-073745-ECEi}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:37:50.822Z DEBUG Capturing snapshots{id=20260916-073745-ECEi}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:37:50.823Z  INFO snapshots-collection: Snapshot completed id=20260916-073745-ECEi path=/var/lib/cloudflare-warp/snapshots/20260916-073745-ECEi.log
+2026-09-16T07:38:44.761Z  INFO snapshots-collection: Started snapshot capture id=20260916-073844-IvKy in_flight=1
+2026-09-16T07:38:44.761Z DEBUG Capturing snapshots{id=20260916-073844-IvKy}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-073844-IvKy") name="Happy Eyeballs Failure"
+2026-09-16T07:38:44.761Z DEBUG Capturing snapshots{id=20260916-073844-IvKy}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:38:44.761Z DEBUG Capturing snapshots{id=20260916-073844-IvKy}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:39:00.909Z DEBUG Capturing snapshots{id=20260916-073844-IvKy}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:39:00.910Z DEBUG Capturing snapshots{id=20260916-073844-IvKy}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:39:00.910Z  INFO snapshots-collection: Snapshot completed id=20260916-073844-IvKy path=/var/lib/cloudflare-warp/snapshots/20260916-073844-IvKy.log
+2026-09-16T07:39:54.082Z  INFO snapshots-collection: Started snapshot capture id=20260916-073954-GmK0 in_flight=1
+2026-09-16T07:39:54.082Z DEBUG Capturing snapshots{id=20260916-073954-GmK0}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-073954-GmK0") name="Happy Eyeballs Failure"
+2026-09-16T07:39:54.082Z DEBUG Capturing snapshots{id=20260916-073954-GmK0}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:39:54.082Z DEBUG Capturing snapshots{id=20260916-073954-GmK0}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:39:59.588Z DEBUG Capturing snapshots{id=20260916-073954-GmK0}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:39:59.589Z DEBUG Capturing snapshots{id=20260916-073954-GmK0}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:39:59.589Z  INFO snapshots-collection: Snapshot completed id=20260916-073954-GmK0 path=/var/lib/cloudflare-warp/snapshots/20260916-073954-GmK0.log
+2026-09-16T07:40:41.528Z  INFO snapshots-collection: Started snapshot capture id=20260916-074041-Omr4 in_flight=1
+2026-09-16T07:40:41.528Z DEBUG Capturing snapshots{id=20260916-074041-Omr4}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-074041-Omr4") name="Happy Eyeballs Failure"
+2026-09-16T07:40:41.528Z DEBUG Capturing snapshots{id=20260916-074041-Omr4}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:40:41.529Z DEBUG Capturing snapshots{id=20260916-074041-Omr4}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:41:02.021Z DEBUG Capturing snapshots{id=20260916-074041-Omr4}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:41:02.022Z DEBUG Capturing snapshots{id=20260916-074041-Omr4}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:41:02.022Z  INFO snapshots-collection: Snapshot completed id=20260916-074041-Omr4 path=/var/lib/cloudflare-warp/snapshots/20260916-074041-Omr4.log
+2026-09-16T07:41:23.853Z  INFO snapshots-collection: Started snapshot capture id=20260916-074123-aEA7 in_flight=1
+2026-09-16T07:41:23.853Z DEBUG Capturing snapshots{id=20260916-074123-aEA7}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-074123-aEA7") name="Happy Eyeballs Failure"
+2026-09-16T07:41:23.853Z DEBUG Capturing snapshots{id=20260916-074123-aEA7}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:41:23.854Z DEBUG Capturing snapshots{id=20260916-074123-aEA7}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:41:30.277Z DEBUG Capturing snapshots{id=20260916-074123-aEA7}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:41:30.277Z DEBUG Capturing snapshots{id=20260916-074123-aEA7}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:41:30.277Z  INFO snapshots-collection: Snapshot completed id=20260916-074123-aEA7 path=/var/lib/cloudflare-warp/snapshots/20260916-074123-aEA7.log
+2026-09-16T07:41:52.299Z  INFO snapshots-collection: Started snapshot capture id=20260916-074152-eoMF in_flight=1
+2026-09-16T07:41:52.299Z DEBUG Capturing snapshots{id=20260916-074152-eoMF}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-074152-eoMF") name="Happy Eyeballs Failure"
+2026-09-16T07:41:52.299Z DEBUG Capturing snapshots{id=20260916-074152-eoMF}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:41:52.300Z DEBUG Capturing snapshots{id=20260916-074152-eoMF}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:41:59.826Z DEBUG Capturing snapshots{id=20260916-074152-eoMF}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:41:59.826Z DEBUG Capturing snapshots{id=20260916-074152-eoMF}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:41:59.827Z  INFO snapshots-collection: Snapshot completed id=20260916-074152-eoMF path=/var/lib/cloudflare-warp/snapshots/20260916-074152-eoMF.log
+2026-09-16T07:43:42.750Z  INFO snapshots-collection: Started snapshot capture id=20260916-074342-rrzs in_flight=1
+2026-09-16T07:43:42.750Z DEBUG Capturing snapshots{id=20260916-074342-rrzs}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-074342-rrzs") name="Happy Eyeballs Failure"
+2026-09-16T07:43:42.750Z DEBUG Capturing snapshots{id=20260916-074342-rrzs}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:43:42.751Z DEBUG Capturing snapshots{id=20260916-074342-rrzs}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:43:49.293Z DEBUG Capturing snapshots{id=20260916-074342-rrzs}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:43:49.294Z DEBUG Capturing snapshots{id=20260916-074342-rrzs}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:43:49.294Z  INFO snapshots-collection: Snapshot completed id=20260916-074342-rrzs path=/var/lib/cloudflare-warp/snapshots/20260916-074342-rrzs.log
+2026-09-16T07:44:12.196Z  INFO snapshots-collection: Started snapshot capture id=20260916-074412-bSAB in_flight=1
+2026-09-16T07:44:12.196Z DEBUG Capturing snapshots{id=20260916-074412-bSAB}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-074412-bSAB") name="Happy Eyeballs Failure"
+2026-09-16T07:44:12.196Z DEBUG Capturing snapshots{id=20260916-074412-bSAB}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:44:12.197Z DEBUG Capturing snapshots{id=20260916-074412-bSAB}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:44:18.770Z DEBUG Capturing snapshots{id=20260916-074412-bSAB}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:44:18.771Z DEBUG Capturing snapshots{id=20260916-074412-bSAB}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:44:18.772Z  INFO snapshots-collection: Snapshot completed id=20260916-074412-bSAB path=/var/lib/cloudflare-warp/snapshots/20260916-074412-bSAB.log
+2026-09-16T07:45:07.636Z  INFO snapshots-collection: Started snapshot capture id=20260916-074507-uWW5 in_flight=1
+2026-09-16T07:45:07.636Z DEBUG Capturing snapshots{id=20260916-074507-uWW5}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-074507-uWW5") name="Happy Eyeballs Failure"
+2026-09-16T07:45:07.636Z DEBUG Capturing snapshots{id=20260916-074507-uWW5}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:45:07.637Z DEBUG Capturing snapshots{id=20260916-074507-uWW5}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:45:35.664Z  INFO snapshots-collection: Started snapshot capture id=20260916-074535-CllE in_flight=2
+2026-09-16T07:45:35.664Z DEBUG Capturing snapshots{id=20260916-074535-CllE}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-074535-CllE") name="Happy Eyeballs Failure"
+2026-09-16T07:45:35.664Z DEBUG Capturing snapshots{id=20260916-074535-CllE}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:45:35.664Z DEBUG Capturing snapshots{id=20260916-074535-CllE}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:46:03.053Z DEBUG Capturing snapshots{id=20260916-074507-uWW5}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:46:03.054Z DEBUG Capturing snapshots{id=20260916-074507-uWW5}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:46:03.054Z  INFO snapshots-collection: Snapshot completed id=20260916-074507-uWW5 path=/var/lib/cloudflare-warp/snapshots/20260916-074507-uWW5.log
+2026-09-16T07:46:03.107Z DEBUG Capturing snapshots{id=20260916-074535-CllE}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:46:03.108Z DEBUG Capturing snapshots{id=20260916-074535-CllE}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:46:03.108Z  INFO snapshots-collection: Snapshot completed id=20260916-074535-CllE path=/var/lib/cloudflare-warp/snapshots/20260916-074535-CllE.log
+2026-09-16T07:46:03.689Z  INFO snapshots-collection: Started snapshot capture id=20260916-074603-aJOL in_flight=1
+2026-09-16T07:46:03.689Z DEBUG Capturing snapshots{id=20260916-074603-aJOL}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-074603-aJOL") name="Happy Eyeballs Failure"
+2026-09-16T07:46:03.689Z DEBUG Capturing snapshots{id=20260916-074603-aJOL}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:46:03.690Z DEBUG Capturing snapshots{id=20260916-074603-aJOL}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:46:10.215Z DEBUG Capturing snapshots{id=20260916-074603-aJOL}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:46:10.215Z DEBUG Capturing snapshots{id=20260916-074603-aJOL}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:46:10.216Z  INFO snapshots-collection: Snapshot completed id=20260916-074603-aJOL path=/var/lib/cloudflare-warp/snapshots/20260916-074603-aJOL.log
+2026-09-16T07:46:34.165Z  INFO snapshots-collection: Started snapshot capture id=20260916-074634-XHWV in_flight=1
+2026-09-16T07:46:34.165Z DEBUG Capturing snapshots{id=20260916-074634-XHWV}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-074634-XHWV") name="Happy Eyeballs Failure"
+2026-09-16T07:46:34.165Z DEBUG Capturing snapshots{id=20260916-074634-XHWV}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:46:34.166Z DEBUG Capturing snapshots{id=20260916-074634-XHWV}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:46:42.633Z DEBUG Capturing snapshots{id=20260916-074634-XHWV}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:46:42.633Z DEBUG Capturing snapshots{id=20260916-074634-XHWV}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:46:42.634Z  INFO snapshots-collection: Snapshot completed id=20260916-074634-XHWV path=/var/lib/cloudflare-warp/snapshots/20260916-074634-XHWV.log
+2026-09-16T07:47:20.610Z  INFO snapshots-collection: Started snapshot capture id=20260916-074720-oclf in_flight=1
+2026-09-16T07:47:20.610Z DEBUG Capturing snapshots{id=20260916-074720-oclf}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-074720-oclf") name="Happy Eyeballs Failure"
+2026-09-16T07:47:20.611Z DEBUG Capturing snapshots{id=20260916-074720-oclf}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:47:20.611Z DEBUG Capturing snapshots{id=20260916-074720-oclf}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:47:28.237Z DEBUG Capturing snapshots{id=20260916-074720-oclf}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:47:28.238Z DEBUG Capturing snapshots{id=20260916-074720-oclf}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:47:28.238Z  INFO snapshots-collection: Snapshot completed id=20260916-074720-oclf path=/var/lib/cloudflare-warp/snapshots/20260916-074720-oclf.log
+2026-09-16T07:48:46.061Z  INFO snapshots-collection: Started snapshot capture id=20260916-074846-Uxme in_flight=1
+2026-09-16T07:48:46.061Z DEBUG Capturing snapshots{id=20260916-074846-Uxme}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-074846-Uxme") name="Happy Eyeballs Failure"
+2026-09-16T07:48:46.061Z DEBUG Capturing snapshots{id=20260916-074846-Uxme}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:48:46.061Z DEBUG Capturing snapshots{id=20260916-074846-Uxme}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:48:54.545Z DEBUG Capturing snapshots{id=20260916-074846-Uxme}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:48:54.546Z DEBUG Capturing snapshots{id=20260916-074846-Uxme}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:48:54.546Z  INFO snapshots-collection: Snapshot completed id=20260916-074846-Uxme path=/var/lib/cloudflare-warp/snapshots/20260916-074846-Uxme.log
+2026-09-16T07:49:11.499Z  INFO snapshots-collection: Started snapshot capture id=20260916-074911-5g3x in_flight=1
+2026-09-16T07:49:11.499Z DEBUG Capturing snapshots{id=20260916-074911-5g3x}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-074911-5g3x") name="Happy Eyeballs Failure"
+2026-09-16T07:49:11.499Z DEBUG Capturing snapshots{id=20260916-074911-5g3x}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:49:11.499Z DEBUG Capturing snapshots{id=20260916-074911-5g3x}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:49:20.748Z DEBUG Capturing snapshots{id=20260916-074911-5g3x}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:49:20.749Z DEBUG Capturing snapshots{id=20260916-074911-5g3x}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:49:20.749Z  INFO snapshots-collection: Snapshot completed id=20260916-074911-5g3x path=/var/lib/cloudflare-warp/snapshots/20260916-074911-5g3x.log
+2026-09-16T07:50:10.970Z  INFO snapshots-collection: Started snapshot capture id=20260916-075010-iwyC in_flight=1
+2026-09-16T07:50:10.970Z DEBUG Capturing snapshots{id=20260916-075010-iwyC}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-075010-iwyC") name="Happy Eyeballs Failure"
+2026-09-16T07:50:10.970Z DEBUG Capturing snapshots{id=20260916-075010-iwyC}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:50:10.970Z DEBUG Capturing snapshots{id=20260916-075010-iwyC}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:50:19.529Z DEBUG Capturing snapshots{id=20260916-075010-iwyC}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:50:19.529Z DEBUG Capturing snapshots{id=20260916-075010-iwyC}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:50:19.529Z  INFO snapshots-collection: Snapshot completed id=20260916-075010-iwyC path=/var/lib/cloudflare-warp/snapshots/20260916-075010-iwyC.log
+2026-09-16T07:51:35.421Z  INFO snapshots-collection: Started snapshot capture id=20260916-075135-LSnj in_flight=1
+2026-09-16T07:51:35.421Z DEBUG Capturing snapshots{id=20260916-075135-LSnj}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-075135-LSnj") name="Happy Eyeballs Failure"
+2026-09-16T07:51:35.421Z DEBUG Capturing snapshots{id=20260916-075135-LSnj}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:51:35.422Z DEBUG Capturing snapshots{id=20260916-075135-LSnj}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:51:42.884Z DEBUG Capturing snapshots{id=20260916-075135-LSnj}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:51:42.884Z DEBUG Capturing snapshots{id=20260916-075135-LSnj}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:51:42.885Z  INFO snapshots-collection: Snapshot completed id=20260916-075135-LSnj path=/var/lib/cloudflare-warp/snapshots/20260916-075135-LSnj.log
+2026-09-16T07:53:00.834Z  INFO snapshots-collection: Started snapshot capture id=20260916-075300-fSxl in_flight=1
+2026-09-16T07:53:00.834Z DEBUG Capturing snapshots{id=20260916-075300-fSxl}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-075300-fSxl") name="Happy Eyeballs Failure"
+2026-09-16T07:53:00.834Z DEBUG Capturing snapshots{id=20260916-075300-fSxl}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:53:00.835Z DEBUG Capturing snapshots{id=20260916-075300-fSxl}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:53:09.384Z DEBUG Capturing snapshots{id=20260916-075300-fSxl}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:53:09.385Z DEBUG Capturing snapshots{id=20260916-075300-fSxl}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:53:09.385Z  INFO snapshots-collection: Snapshot completed id=20260916-075300-fSxl path=/var/lib/cloudflare-warp/snapshots/20260916-075300-fSxl.log
+2026-09-16T07:54:11.301Z  INFO snapshots-collection: Started snapshot capture id=20260916-075411-ffn5 in_flight=1
+2026-09-16T07:54:11.301Z DEBUG Capturing snapshots{id=20260916-075411-ffn5}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-075411-ffn5") name="Happy Eyeballs Failure"
+2026-09-16T07:54:11.301Z DEBUG Capturing snapshots{id=20260916-075411-ffn5}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:54:11.302Z DEBUG Capturing snapshots{id=20260916-075411-ffn5}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:54:20.872Z DEBUG Capturing snapshots{id=20260916-075411-ffn5}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:54:20.872Z DEBUG Capturing snapshots{id=20260916-075411-ffn5}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:54:20.872Z  INFO snapshots-collection: Snapshot completed id=20260916-075411-ffn5 path=/var/lib/cloudflare-warp/snapshots/20260916-075411-ffn5.log
+2026-09-16T07:55:26.757Z  INFO snapshots-collection: Started snapshot capture id=20260916-075526-CBki in_flight=1
+2026-09-16T07:55:26.757Z DEBUG Capturing snapshots{id=20260916-075526-CBki}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-075526-CBki") name="Happy Eyeballs Failure"
+2026-09-16T07:55:26.757Z DEBUG Capturing snapshots{id=20260916-075526-CBki}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:55:26.758Z DEBUG Capturing snapshots{id=20260916-075526-CBki}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:55:37.873Z DEBUG Capturing snapshots{id=20260916-075526-CBki}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:55:37.873Z DEBUG Capturing snapshots{id=20260916-075526-CBki}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:55:37.884Z  INFO snapshots-collection: Snapshot completed id=20260916-075526-CBki path=/var/lib/cloudflare-warp/snapshots/20260916-075526-CBki.log
+2026-09-16T07:56:52.228Z  INFO snapshots-collection: Started snapshot capture id=20260916-075652-e3P3 in_flight=1
+2026-09-16T07:56:52.228Z DEBUG Capturing snapshots{id=20260916-075652-e3P3}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-075652-e3P3") name="Happy Eyeballs Failure"
+2026-09-16T07:56:52.228Z DEBUG Capturing snapshots{id=20260916-075652-e3P3}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:56:52.229Z DEBUG Capturing snapshots{id=20260916-075652-e3P3}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:56:59.706Z DEBUG Capturing snapshots{id=20260916-075652-e3P3}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:56:59.706Z DEBUG Capturing snapshots{id=20260916-075652-e3P3}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:56:59.707Z  INFO snapshots-collection: Snapshot completed id=20260916-075652-e3P3 path=/var/lib/cloudflare-warp/snapshots/20260916-075652-e3P3.log
+2026-09-16T07:58:16.698Z  INFO snapshots-collection: Started snapshot capture id=20260916-075816-QWcs in_flight=1
+2026-09-16T07:58:16.698Z DEBUG Capturing snapshots{id=20260916-075816-QWcs}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-075816-QWcs") name="Happy Eyeballs Failure"
+2026-09-16T07:58:16.698Z DEBUG Capturing snapshots{id=20260916-075816-QWcs}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:58:16.698Z DEBUG Capturing snapshots{id=20260916-075816-QWcs}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:58:26.327Z DEBUG Capturing snapshots{id=20260916-075816-QWcs}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:58:26.328Z DEBUG Capturing snapshots{id=20260916-075816-QWcs}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:58:26.328Z  INFO snapshots-collection: Snapshot completed id=20260916-075816-QWcs path=/var/lib/cloudflare-warp/snapshots/20260916-075816-QWcs.log
+2026-09-16T07:59:27.141Z  INFO snapshots-collection: Started snapshot capture id=20260916-075927-xdSW in_flight=1
+2026-09-16T07:59:27.141Z DEBUG Capturing snapshots{id=20260916-075927-xdSW}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-075927-xdSW") name="Happy Eyeballs Failure"
+2026-09-16T07:59:27.141Z DEBUG Capturing snapshots{id=20260916-075927-xdSW}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T07:59:27.141Z DEBUG Capturing snapshots{id=20260916-075927-xdSW}: actor_snapshot::snapshot: Starting collection
+2026-09-16T07:59:46.925Z DEBUG Capturing snapshots{id=20260916-075927-xdSW}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T07:59:46.926Z DEBUG Capturing snapshots{id=20260916-075927-xdSW}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T07:59:46.926Z  INFO snapshots-collection: Snapshot completed id=20260916-075927-xdSW path=/var/lib/cloudflare-warp/snapshots/20260916-075927-xdSW.log
+2026-09-16T08:00:43.823Z  INFO snapshots-collection: Started snapshot capture id=20260916-080043-yU3v in_flight=1
+2026-09-16T08:00:43.823Z DEBUG Capturing snapshots{id=20260916-080043-yU3v}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-080043-yU3v") name="Happy Eyeballs Failure"
+2026-09-16T08:00:43.823Z DEBUG Capturing snapshots{id=20260916-080043-yU3v}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:00:43.824Z DEBUG Capturing snapshots{id=20260916-080043-yU3v}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:00:52.048Z DEBUG Capturing snapshots{id=20260916-080043-yU3v}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:00:52.049Z DEBUG Capturing snapshots{id=20260916-080043-yU3v}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:00:52.049Z  INFO snapshots-collection: Snapshot completed id=20260916-080043-yU3v path=/var/lib/cloudflare-warp/snapshots/20260916-080043-yU3v.log
+2026-09-16T08:02:08.291Z  INFO snapshots-collection: Started snapshot capture id=20260916-080208-riGl in_flight=1
+2026-09-16T08:02:08.291Z DEBUG Capturing snapshots{id=20260916-080208-riGl}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-080208-riGl") name="Happy Eyeballs Failure"
+2026-09-16T08:02:08.291Z DEBUG Capturing snapshots{id=20260916-080208-riGl}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:02:08.291Z DEBUG Capturing snapshots{id=20260916-080208-riGl}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:02:16.935Z DEBUG Capturing snapshots{id=20260916-080208-riGl}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:02:16.936Z DEBUG Capturing snapshots{id=20260916-080208-riGl}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:02:16.936Z  INFO snapshots-collection: Snapshot completed id=20260916-080208-riGl path=/var/lib/cloudflare-warp/snapshots/20260916-080208-riGl.log
+2026-09-16T08:03:33.776Z  INFO snapshots-collection: Started snapshot capture id=20260916-080333-vsC8 in_flight=1
+2026-09-16T08:03:33.776Z DEBUG Capturing snapshots{id=20260916-080333-vsC8}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-080333-vsC8") name="Happy Eyeballs Failure"
+2026-09-16T08:03:33.776Z DEBUG Capturing snapshots{id=20260916-080333-vsC8}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:03:33.777Z DEBUG Capturing snapshots{id=20260916-080333-vsC8}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:03:40.323Z DEBUG Capturing snapshots{id=20260916-080333-vsC8}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:03:40.324Z DEBUG Capturing snapshots{id=20260916-080333-vsC8}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:03:40.324Z  INFO snapshots-collection: Snapshot completed id=20260916-080333-vsC8 path=/var/lib/cloudflare-warp/snapshots/20260916-080333-vsC8.log
+2026-09-16T08:04:43.220Z  INFO snapshots-collection: Started snapshot capture id=20260916-080443-5x5t in_flight=1
+2026-09-16T08:04:43.220Z DEBUG Capturing snapshots{id=20260916-080443-5x5t}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-080443-5x5t") name="Happy Eyeballs Failure"
+2026-09-16T08:04:43.220Z DEBUG Capturing snapshots{id=20260916-080443-5x5t}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:04:43.221Z DEBUG Capturing snapshots{id=20260916-080443-5x5t}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:04:51.186Z DEBUG Capturing snapshots{id=20260916-080443-5x5t}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:04:51.187Z DEBUG Capturing snapshots{id=20260916-080443-5x5t}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:04:51.187Z  INFO snapshots-collection: Snapshot completed id=20260916-080443-5x5t path=/var/lib/cloudflare-warp/snapshots/20260916-080443-5x5t.log
+2026-09-16T08:05:59.669Z  INFO snapshots-collection: Started snapshot capture id=20260916-080559-XlWY in_flight=1
+2026-09-16T08:05:59.669Z DEBUG Capturing snapshots{id=20260916-080559-XlWY}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-080559-XlWY") name="Happy Eyeballs Failure"
+2026-09-16T08:05:59.669Z DEBUG Capturing snapshots{id=20260916-080559-XlWY}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:05:59.670Z DEBUG Capturing snapshots{id=20260916-080559-XlWY}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:06:07.331Z DEBUG Capturing snapshots{id=20260916-080559-XlWY}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:06:07.332Z DEBUG Capturing snapshots{id=20260916-080559-XlWY}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:06:07.332Z  INFO snapshots-collection: Snapshot completed id=20260916-080559-XlWY path=/var/lib/cloudflare-warp/snapshots/20260916-080559-XlWY.log
+2026-09-16T08:07:24.117Z  INFO snapshots-collection: Started snapshot capture id=20260916-080724-fXYW in_flight=1
+2026-09-16T08:07:24.117Z DEBUG Capturing snapshots{id=20260916-080724-fXYW}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-080724-fXYW") name="Happy Eyeballs Failure"
+2026-09-16T08:07:24.117Z DEBUG Capturing snapshots{id=20260916-080724-fXYW}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:07:24.118Z DEBUG Capturing snapshots{id=20260916-080724-fXYW}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:07:32.618Z DEBUG Capturing snapshots{id=20260916-080724-fXYW}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:07:32.618Z DEBUG Capturing snapshots{id=20260916-080724-fXYW}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:07:32.619Z  INFO snapshots-collection: Snapshot completed id=20260916-080724-fXYW path=/var/lib/cloudflare-warp/snapshots/20260916-080724-fXYW.log
+2026-09-16T08:08:49.548Z  INFO snapshots-collection: Started snapshot capture id=20260916-080849-tfjA in_flight=1
+2026-09-16T08:08:49.548Z DEBUG Capturing snapshots{id=20260916-080849-tfjA}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-080849-tfjA") name="Happy Eyeballs Failure"
+2026-09-16T08:08:49.548Z DEBUG Capturing snapshots{id=20260916-080849-tfjA}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:08:49.549Z DEBUG Capturing snapshots{id=20260916-080849-tfjA}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:08:59.053Z DEBUG Capturing snapshots{id=20260916-080849-tfjA}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:08:59.054Z DEBUG Capturing snapshots{id=20260916-080849-tfjA}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:08:59.054Z  INFO snapshots-collection: Snapshot completed id=20260916-080849-tfjA path=/var/lib/cloudflare-warp/snapshots/20260916-080849-tfjA.log
+2026-09-16T08:09:58.989Z  INFO snapshots-collection: Started snapshot capture id=20260916-080958-eJrB in_flight=1
+2026-09-16T08:09:58.989Z DEBUG Capturing snapshots{id=20260916-080958-eJrB}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-080958-eJrB") name="Happy Eyeballs Failure"
+2026-09-16T08:09:58.989Z DEBUG Capturing snapshots{id=20260916-080958-eJrB}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:09:58.989Z DEBUG Capturing snapshots{id=20260916-080958-eJrB}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:10:18.210Z DEBUG Capturing snapshots{id=20260916-080958-eJrB}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:10:18.210Z DEBUG Capturing snapshots{id=20260916-080958-eJrB}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:10:18.211Z  INFO snapshots-collection: Snapshot completed id=20260916-080958-eJrB path=/var/lib/cloudflare-warp/snapshots/20260916-080958-eJrB.log
+2026-09-16T08:11:15.443Z  INFO snapshots-collection: Started snapshot capture id=20260916-081115-wvYN in_flight=1
+2026-09-16T08:11:15.443Z DEBUG Capturing snapshots{id=20260916-081115-wvYN}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-081115-wvYN") name="Happy Eyeballs Failure"
+2026-09-16T08:11:15.443Z DEBUG Capturing snapshots{id=20260916-081115-wvYN}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:11:15.443Z DEBUG Capturing snapshots{id=20260916-081115-wvYN}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:11:25.457Z DEBUG Capturing snapshots{id=20260916-081115-wvYN}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:11:25.457Z DEBUG Capturing snapshots{id=20260916-081115-wvYN}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:11:25.457Z  INFO snapshots-collection: Snapshot completed id=20260916-081115-wvYN path=/var/lib/cloudflare-warp/snapshots/20260916-081115-wvYN.log
+2026-09-16T08:12:40.882Z  INFO snapshots-collection: Started snapshot capture id=20260916-081240-VBQW in_flight=1
+2026-09-16T08:12:40.882Z DEBUG Capturing snapshots{id=20260916-081240-VBQW}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-081240-VBQW") name="Happy Eyeballs Failure"
+2026-09-16T08:12:40.882Z DEBUG Capturing snapshots{id=20260916-081240-VBQW}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:12:40.882Z DEBUG Capturing snapshots{id=20260916-081240-VBQW}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:12:50.449Z DEBUG Capturing snapshots{id=20260916-081240-VBQW}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:12:50.449Z DEBUG Capturing snapshots{id=20260916-081240-VBQW}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:12:50.449Z  INFO snapshots-collection: Snapshot completed id=20260916-081240-VBQW path=/var/lib/cloudflare-warp/snapshots/20260916-081240-VBQW.log
+2026-09-16T08:14:05.354Z  INFO snapshots-collection: Started snapshot capture id=20260916-081405-5Qvk in_flight=1
+2026-09-16T08:14:05.354Z DEBUG Capturing snapshots{id=20260916-081405-5Qvk}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-081405-5Qvk") name="Happy Eyeballs Failure"
+2026-09-16T08:14:05.354Z DEBUG Capturing snapshots{id=20260916-081405-5Qvk}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:14:05.355Z DEBUG Capturing snapshots{id=20260916-081405-5Qvk}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:14:14.865Z DEBUG Capturing snapshots{id=20260916-081405-5Qvk}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:14:14.865Z DEBUG Capturing snapshots{id=20260916-081405-5Qvk}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:14:14.865Z  INFO snapshots-collection: Snapshot completed id=20260916-081405-5Qvk path=/var/lib/cloudflare-warp/snapshots/20260916-081405-5Qvk.log
+2026-09-16T08:15:15.789Z  INFO snapshots-collection: Started snapshot capture id=20260916-081515-mAHP in_flight=1
+2026-09-16T08:15:15.789Z DEBUG Capturing snapshots{id=20260916-081515-mAHP}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-081515-mAHP") name="Happy Eyeballs Failure"
+2026-09-16T08:15:15.789Z DEBUG Capturing snapshots{id=20260916-081515-mAHP}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:15:15.789Z DEBUG Capturing snapshots{id=20260916-081515-mAHP}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:15:24.589Z DEBUG Capturing snapshots{id=20260916-081515-mAHP}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:15:24.589Z DEBUG Capturing snapshots{id=20260916-081515-mAHP}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:15:24.590Z  INFO snapshots-collection: Snapshot completed id=20260916-081515-mAHP path=/var/lib/cloudflare-warp/snapshots/20260916-081515-mAHP.log
+2026-09-16T08:16:31.234Z  INFO snapshots-collection: Started snapshot capture id=20260916-081631-WbSX in_flight=1
+2026-09-16T08:16:31.234Z DEBUG Capturing snapshots{id=20260916-081631-WbSX}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-081631-WbSX") name="Happy Eyeballs Failure"
+2026-09-16T08:16:31.234Z DEBUG Capturing snapshots{id=20260916-081631-WbSX}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:16:31.234Z DEBUG Capturing snapshots{id=20260916-081631-WbSX}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:16:40.812Z DEBUG Capturing snapshots{id=20260916-081631-WbSX}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:16:40.812Z DEBUG Capturing snapshots{id=20260916-081631-WbSX}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:16:40.813Z  INFO snapshots-collection: Snapshot completed id=20260916-081631-WbSX path=/var/lib/cloudflare-warp/snapshots/20260916-081631-WbSX.log
+2026-09-16T08:17:56.717Z  INFO snapshots-collection: Started snapshot capture id=20260916-081756-iiQE in_flight=1
+2026-09-16T08:17:56.717Z DEBUG Capturing snapshots{id=20260916-081756-iiQE}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-081756-iiQE") name="Happy Eyeballs Failure"
+2026-09-16T08:17:56.717Z DEBUG Capturing snapshots{id=20260916-081756-iiQE}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:17:56.718Z DEBUG Capturing snapshots{id=20260916-081756-iiQE}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:18:04.195Z DEBUG Capturing snapshots{id=20260916-081756-iiQE}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:18:04.196Z DEBUG Capturing snapshots{id=20260916-081756-iiQE}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:18:04.196Z  INFO snapshots-collection: Snapshot completed id=20260916-081756-iiQE path=/var/lib/cloudflare-warp/snapshots/20260916-081756-iiQE.log
+2026-09-16T08:19:21.157Z  INFO snapshots-collection: Started snapshot capture id=20260916-081921-yABf in_flight=1
+2026-09-16T08:19:21.157Z DEBUG Capturing snapshots{id=20260916-081921-yABf}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-081921-yABf") name="Happy Eyeballs Failure"
+2026-09-16T08:19:21.157Z DEBUG Capturing snapshots{id=20260916-081921-yABf}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:19:21.157Z DEBUG Capturing snapshots{id=20260916-081921-yABf}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:19:27.736Z DEBUG Capturing snapshots{id=20260916-081921-yABf}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:19:27.736Z DEBUG Capturing snapshots{id=20260916-081921-yABf}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:19:27.736Z  INFO snapshots-collection: Snapshot completed id=20260916-081921-yABf path=/var/lib/cloudflare-warp/snapshots/20260916-081921-yABf.log
+2026-09-16T08:20:26.628Z  INFO snapshots-collection: Started snapshot capture id=20260916-082026-kUnI in_flight=1
+2026-09-16T08:20:26.628Z DEBUG Capturing snapshots{id=20260916-082026-kUnI}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-082026-kUnI") name="Happy Eyeballs Failure"
+2026-09-16T08:20:26.628Z DEBUG Capturing snapshots{id=20260916-082026-kUnI}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:20:26.629Z DEBUG Capturing snapshots{id=20260916-082026-kUnI}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:21:26.630Z  WARN snapshots-collection: Snapshot failed id=20260916-082026-kUnI error=snapshot timed out after 60s
+2026-09-16T08:23:48.195Z  INFO snapshots-collection: Started snapshot capture id=20260916-082348-FVX9 in_flight=1
+2026-09-16T08:23:48.195Z DEBUG Capturing snapshots{id=20260916-082348-FVX9}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-082348-FVX9") name="Happy Eyeballs Failure"
+2026-09-16T08:23:48.195Z DEBUG Capturing snapshots{id=20260916-082348-FVX9}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:23:48.196Z DEBUG Capturing snapshots{id=20260916-082348-FVX9}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:23:56.396Z DEBUG Capturing snapshots{id=20260916-082348-FVX9}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:23:56.397Z DEBUG Capturing snapshots{id=20260916-082348-FVX9}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:23:56.397Z  INFO snapshots-collection: Snapshot completed id=20260916-082348-FVX9 path=/var/lib/cloudflare-warp/snapshots/20260916-082348-FVX9.log
+2026-09-16T08:25:12.666Z  INFO snapshots-collection: Started snapshot capture id=20260916-082512-1dGz in_flight=1
+2026-09-16T08:25:12.666Z DEBUG Capturing snapshots{id=20260916-082512-1dGz}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-082512-1dGz") name="Happy Eyeballs Failure"
+2026-09-16T08:25:12.666Z DEBUG Capturing snapshots{id=20260916-082512-1dGz}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:25:12.667Z DEBUG Capturing snapshots{id=20260916-082512-1dGz}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:25:20.168Z DEBUG Capturing snapshots{id=20260916-082512-1dGz}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:25:20.169Z DEBUG Capturing snapshots{id=20260916-082512-1dGz}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:25:20.170Z  INFO snapshots-collection: Snapshot completed id=20260916-082512-1dGz path=/var/lib/cloudflare-warp/snapshots/20260916-082512-1dGz.log
+2026-09-16T08:25:48.101Z  INFO snapshots-collection: Started snapshot capture id=20260916-082548-9X1z in_flight=1
+2026-09-16T08:25:48.101Z DEBUG Capturing snapshots{id=20260916-082548-9X1z}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-082548-9X1z") name="Happy Eyeballs Failure"
+2026-09-16T08:25:48.101Z DEBUG Capturing snapshots{id=20260916-082548-9X1z}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:25:48.101Z DEBUG Capturing snapshots{id=20260916-082548-9X1z}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:25:56.450Z DEBUG Capturing snapshots{id=20260916-082548-9X1z}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:25:56.451Z DEBUG Capturing snapshots{id=20260916-082548-9X1z}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:25:56.451Z  INFO snapshots-collection: Snapshot completed id=20260916-082548-9X1z path=/var/lib/cloudflare-warp/snapshots/20260916-082548-9X1z.log
+2026-09-16T08:26:37.542Z  INFO snapshots-collection: Started snapshot capture id=20260916-082637-aLmP in_flight=1
+2026-09-16T08:26:37.542Z DEBUG Capturing snapshots{id=20260916-082637-aLmP}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-082637-aLmP") name="Happy Eyeballs Failure"
+2026-09-16T08:26:37.542Z DEBUG Capturing snapshots{id=20260916-082637-aLmP}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:26:37.543Z DEBUG Capturing snapshots{id=20260916-082637-aLmP}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:26:46.161Z DEBUG Capturing snapshots{id=20260916-082637-aLmP}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:26:46.161Z DEBUG Capturing snapshots{id=20260916-082637-aLmP}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:26:46.162Z  INFO snapshots-collection: Snapshot completed id=20260916-082637-aLmP path=/var/lib/cloudflare-warp/snapshots/20260916-082637-aLmP.log
+2026-09-16T08:28:02.985Z  INFO snapshots-collection: Started snapshot capture id=20260916-082802-YuKs in_flight=1
+2026-09-16T08:28:02.985Z DEBUG Capturing snapshots{id=20260916-082802-YuKs}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-082802-YuKs") name="Happy Eyeballs Failure"
+2026-09-16T08:28:02.985Z DEBUG Capturing snapshots{id=20260916-082802-YuKs}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T08:28:02.985Z DEBUG Capturing snapshots{id=20260916-082802-YuKs}: actor_snapshot::snapshot: Starting collection
+2026-09-16T08:28:12.461Z DEBUG Capturing snapshots{id=20260916-082802-YuKs}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T08:28:12.461Z DEBUG Capturing snapshots{id=20260916-082802-YuKs}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T08:28:12.470Z  INFO snapshots-collection: Snapshot completed id=20260916-082802-YuKs path=/var/lib/cloudflare-warp/snapshots/20260916-082802-YuKs.log
+2026-09-16T13:31:48.209Z  INFO snapshots-collection: Started snapshot capture id=20260916-133148-Xl9A in_flight=1
+2026-09-16T13:31:48.209Z DEBUG Capturing snapshots{id=20260916-133148-Xl9A}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260916-133148-Xl9A") name="Happy Eyeballs Failure"
+2026-09-16T13:31:48.209Z DEBUG Capturing snapshots{id=20260916-133148-Xl9A}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-16T13:31:48.209Z DEBUG Capturing snapshots{id=20260916-133148-Xl9A}: actor_snapshot::snapshot: Starting collection
+2026-09-16T13:31:48.211Z DEBUG Capturing snapshots{id=20260916-133148-Xl9A}: actor_snapshot::snapshot: Writing snapshot reports to file
+2026-09-16T13:31:48.212Z DEBUG Capturing snapshots{id=20260916-133148-Xl9A}: actor_snapshot::snapshot: Done writing snapshot
+2026-09-16T13:31:48.212Z  INFO snapshots-collection: Snapshot completed id=20260916-133148-Xl9A path=/var/lib/cloudflare-warp/snapshots/20260916-133148-Xl9A.log

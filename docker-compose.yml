@@ -1,0 +1,16 @@
+services:
+  warp:
+    image: caomingjun/warp:latest
+    container_name: warp
+    restart: always
+    volumes:
+      - /root/vpn-chain/warp-data:/var/lib/cloudflare-warp
+    environment:
+      - WARP_SLEEP=2
+      - GOST_ARGS=-L :1080 -F socks5://127.0.0.1:40000
+    networks:
+      - default
+
+networks:
+  default:
+    name: vpn-chain_default

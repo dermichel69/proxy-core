@@ -1,0 +1,24 @@
+{
+  "log": { "loglevel": "warning" },
+  "inbounds": [
+    {
+      "port": 2096,
+      "protocol": "socks",
+      "settings": {
+        "auth": "password",
+        "accounts": [{ "user": "streamnet", "pass": "secret123" }],
+        "udp": true
+      }
+    },
+    {
+      "port": 2097,
+      "protocol": "http",
+      "settings": {
+        "accounts": [{ "user": "streamnet", "pass": "secret123" }]
+      }
+    }
+  ],
+  "outbounds": [
+    { "protocol": "freedom" }
+  ]
+}

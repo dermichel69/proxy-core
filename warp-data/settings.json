@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "always_on": true,
+  "operation_mode": {
+    "WarpProxy": null
+  },
+  "dns_log_until": null,
+  "proxy_port": 40000,
+  "qlog_log_until": null
+}

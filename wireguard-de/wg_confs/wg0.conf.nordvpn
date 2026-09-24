@@ -1,0 +1,15 @@
+[Interface]
+PostUp = iptables -t mangle -A OUTPUT -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --set-mss 1220
+PostUp = iptables -t mangle -A POSTROUTING -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --set-mss 1220
+PostDown = iptables -t mangle -D OUTPUT -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --set-mss 1220 || true
+PostDown = iptables -t mangle -D POSTROUTING -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --set-mss 1220 || true
+PrivateKey = b7+slCvjWeFMy3yZWw7ZWIm1yzoHPMeDsNhNJhexbpM=
+Address = 10.5.0.2/16
+DNS = 103.86.96.100, 103.86.99.100
+MTU = 1280
+
+[Peer]
+PublicKey = qJb7+jCxGN8MAcSTKcDvDE81XobRBv1mu+phcB3zOGw=
+AllowedIPs = 0.0.0.0/0
+Endpoint = hamburg.de.wg.nordhold.net:51820
+PersistentKeepalive = 25

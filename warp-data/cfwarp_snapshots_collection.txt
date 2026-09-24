@@ -1,0 +1,5 @@
+2026-09-22T08:03:53.251Z  INFO snapshots-collection: Started snapshot capture id=20260922-080353-gNJW in_flight=1
+2026-09-22T08:03:53.251Z DEBUG Capturing snapshots{id=20260922-080353-gNJW}: actor_snapshot::snapshot: Capturing snapshot id=SnapshotId("20260922-080353-gNJW") name="Happy Eyeballs Failure"
+2026-09-22T08:03:53.251Z DEBUG Capturing snapshots{id=20260922-080353-gNJW}: actor_snapshot::snapshot: Creating snapshot file
+2026-09-22T08:03:53.252Z DEBUG Capturing snapshots{id=20260922-080353-gNJW}: actor_snapshot::snapshot: Starting collection
+2026-09-22T08:04:53.253Z  WARN snapshots-collection: Snapshot failed id=20260922-080353-gNJW error=snapshot timed out after 60s
