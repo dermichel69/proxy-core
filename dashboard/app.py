@@ -12,11 +12,13 @@ from werkzeug.security import generate_password_hash, check_password_hash
 app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
-app.secret_key = "streamnet_secure_core_secret_key_9921!"
+app.secret_key = os.getenv("STREAMNET_SECRET_KEY", "change-me-local-only")
 app.permanent_session_lifetime = timedelta(days=30)
 
+ADMIN_USER = os.getenv("STREAMNET_ADMIN_USER", "admin")
+ADMIN_PASSWORD = os.getenv("STREAMNET_ADMIN_PASSWORD", "change-me-local-only")
 USERS = {
-    "dermichel": generate_password_hash("GBy1BCjd")
+    ADMIN_USER: generate_password_hash(ADMIN_PASSWORD)
 }
 
 STREAMERS = [

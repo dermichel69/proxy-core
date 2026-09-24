@@ -3,20 +3,29 @@ set -e
 
 TARGET="${1,,}"
 WG_CONF="/root/vpn-chain/wireguard-de/wg_confs/wg0.conf"
-TEST_URL="https://svc45.main.sl.t-online.de/bpk-tv/KID00754_TelekomEishockey1_hd/DASH/index.mpd"
+TEST_URL="${TEST_URL:-https://example.com/test.mpd}"
+XRAY_PROXY_USER="${XRAY_PROXY_USER:-replace-me-local-only}"
+XRAY_PROXY_PASSWORD="${XRAY_PROXY_PASSWORD:-replace-me-local-only}"
+
+# load local overrides from .env if present
+if [ -f /root/vpn-chain/.env ]; then
+  set -a
+  . /root/vpn-chain/.env
+  set +a
+fi
 
 case "$TARGET" in
   berlin)
-    ENDPOINT="berlin.de.wg.nordhold.net:51820"
-    PUBKEY="3ZNjosvvIqfvu3/BqaLzNNXs9zWO4jXpcXNOmDMDpX0="
+    ENDPOINT="${WG_ENDPOINT_BERLIN:-berlin.example.com:51820}"
+    PUBKEY="${WG_PUBLICKEY_BERLIN:-REPLACE_WITH_LOCAL_PUBLIC_KEY}"
     ;;
   frankfurt)
-    ENDPOINT="frankfurt.de.wg.nordhold.net:51820"
-    PUBKEY="b1Qp9oZfB7bUvP7kQh9F2y8T1eXqKxL9wVnM8uRt7mY="
+    ENDPOINT="${WG_ENDPOINT_FRANKFURT:-frankfurt.example.com:51820}"
+    PUBKEY="${WG_PUBLICKEY_FRANKFURT:-REPLACE_WITH_LOCAL_PUBLIC_KEY}"
     ;;
   hamburg)
-    ENDPOINT="de-ham-wg-001.nordvpn.com:51820"
-    PUBKEY="R6qY3B7Vz4X6yKk0D5d8z7w9T1x3L4m5N6p7Q8r9S0t="
+    ENDPOINT="${WG_ENDPOINT_HAMBURG:-hamburg.example.com:51820}"
+    PUBKEY="${WG_PUBLICKEY_HAMBURG:-REPLACE_WITH_LOCAL_PUBLIC_KEY}"
     ;;
   *)
     echo "Nutzung: $0 {berlin|frankfurt|hamburg}"
@@ -35,12 +44,12 @@ echo "[3/4] Warte auf WireGuard-Handshake..."
 sleep 4
 docker exec wireguard-de wg show
 
-echo "[4/4] Teste Telekom-Manifest über Proxy-Port 2081..."
+echo "[4/4] Teste Manifest über Proxy-Port 2081..."
 HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -m 6 \
-  -x http://streamnet:secret123@127.0.0.1:2081 \
-  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
-  -H "Origin: https://web.magentatv.de" \
-  -H "Referer: https://web.magentatv.de/" \
+  -x "http://${XRAY_PROXY_USER}:${XRAY_PROXY_PASSWORD}@127.0.0.1:2081" \
+  -H "User-Agent: Mozilla/5.0" \
+  -H "Origin: https://example.com" \
+  -H "Referer: https://example.com/" \
   "$TEST_URL")
 
 echo "--> HTTP Response: $HTTP_STATUS"

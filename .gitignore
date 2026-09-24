@@ -25,6 +25,20 @@ env/
 *.pem
 *.key
 *.crt
+*.local
+*.local.*
+**/auth.txt
+**/*.ovpn
+**/wg_confs/*.conf
+**/wireguard*/
+**/openvpn*/
+**/xray*/
+**/xray*.json
+**/config.json
+**/reg.json
+**/settings.json
+**/final-overrides-settings.json
+**/local_settings.py
 
 # Logs and temp files
 *.log
@@ -49,3 +63,6 @@ Google/Chrome/
 # Generic local working files
 *.local
 *.local.*
+
+# Local-only security instructions
+SECURITY_RESET_STEPS.txt

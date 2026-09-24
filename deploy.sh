@@ -1,9 +1,17 @@
 #!/bin/bash
+set -a
+[ -f /root/vpn-chain/.env ] && . /root/vpn-chain/.env
+set +a
+
 mkdir -p /root/vpn-chain
 cd /root/vpn-chain
 
+WIREGUARD_PRIVATE_KEY="${WIREGUARD_PRIVATE_KEY:-replace-me-local-only}"
+XRAY_PROXY_USER="${XRAY_PROXY_USER:-replace-me-local-only}"
+XRAY_PROXY_PASSWORD="${XRAY_PROXY_PASSWORD:-replace-me-local-only}"
+
 # 1. docker-compose.yml erstellen
-cat << 'EOL' > docker-compose.yml
+cat <<EOL > docker-compose.yml
 version: '3.8'
 
 services:
@@ -20,7 +28,7 @@ services:
       - VPN_SERVICE_PROVIDER=custom
       - OPENVPN_CUSTOM_CONFIG=
       - WIREGUARD_ENABLED=on
-      - WIREGUARD_PRIVATE_KEY=8MezrZhXL0omxtPemKPQqEborwZz8OrzxTLwKsjPQkc=
+      - WIREGUARD_PRIVATE_KEY=${WIREGUARD_PRIVATE_KEY}
       - WIREGUARD_ADDRESSES=10.2.0.2/32
     restart: unless-stopped
 
@@ -33,8 +41,8 @@ services:
     restart: unless-stopped
 EOL
 
-# 2. xray.json erstellen (Xray wird normalerweise direkt in Gluetun oder als eigener Container eingebunden - hier als Basis)
-cat << 'EOL' > xray.json
+# 2. xray.json erstellen (placeholder values; lokal mit echten Werten aus .env befüllen)
+cat <<EOL > xray.json
 {
   "log": {
     "loglevel": "warning"
@@ -54,8 +62,8 @@ cat << 'EOL' > xray.json
         "auth": "password",
         "accounts": [
           {
-            "user": "streamnet",
-            "pass": "secret123"
+            "user": "${XRAY_PROXY_USER}",
+            "pass": "${XRAY_PROXY_PASSWORD}"
           }
         ],
         "udp": true
@@ -72,12 +80,12 @@ cat << 'EOL' > xray.json
     {
       "protocol": "wireguard",
       "settings": {
-        "secretKey": "DEINE_WARP_PRIVATE_KEY",
+        "secretKey": "${WIREGUARD_PRIVATE_KEY}",
         "address": ["172.16.0.2/32"],
         "peers": [
           {
             "endpoint": "engage.cloudflareclient.com:2408",
-            "publicKey": "bmXWuWfHCzxfrDHzPYAvglfW4UZHzYrDrnaGXQkDbSc=",
+            "publicKey": "REPLACE_WITH_LOCAL_PUBLIC_KEY",
             "keepAlive": 5
           }
         ],
@@ -102,7 +110,7 @@ cat << 'EOL' > xray.json
     "rules": [
       {
         "type": "field",
-        "domain": ["vodafone.de", "vtv-prod.vodafone.de"],
+        "domain": ["example.com"],
         "outboundTag": "warp-out"
       }
     ]
@@ -112,7 +120,7 @@ EOL
 
 # 3. Firewall für Streamer öffnen
 apt update && apt install -y netfilter-persistent iptables-persistent
-iptables -I DOCKER-USER 1 -p tcp --dport 1080 -s 67.159.11.66 -j ACCEPT
+iptables -I DOCKER-USER 1 -p tcp --dport 1080 -s 0.0.0.0/0 -j ACCEPT
 netfilter-persistent save
 
 # 4. Docker Stack starten

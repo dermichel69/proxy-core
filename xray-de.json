@@ -12,8 +12,8 @@
         "auth": "password",
         "accounts": [
           {
-            "user": "streamnet",
-            "pass": "secret123"
+            "user": "replace-me-local-only",
+            "pass": "replace-me-local-only"
           }
         ],
         "udp": false
@@ -35,8 +35,8 @@
       "settings": {
         "accounts": [
           {
-            "user": "streamnet",
-            "pass": "secret123"
+            "user": "replace-me-local-only",
+            "pass": "replace-me-local-only"
           }
         ],
         "allowTransparent": false
